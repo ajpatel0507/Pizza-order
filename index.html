@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <!--charset=UTF-8 is used as it has almost all the characters and symbols -->
+    <meta charset="utf-8">
+    <!--the following meta tag= viewport is the area of the window in which web content can be seen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--the following Title tag is one of the most important tag-->
+    <title>pizza order form</title>
+    <!--The following gives description of the page -->
+    <meta name="description" content="Order your pizza now">
+    <!--The following meta tag tells the search either we want our webpage hidden or indexed -->
+    <meta name="robots" content="no index, no follow">
+    <link rel="stylesheet" type=  "text/css" href="styles.css">
+  </head><!--That's the end of head -->
+  <body><!-- Here starts the body -->
+    <header>
+    <div>
+      <!--Uploading image-->
+      <img src="image.png" alt="pizza">
+    </div>
+    </header>
+   <main>
+     <section>
+       <div>
+         <!--The h1 is the main heading element-->
+         <h1>PATEL'S PIZZA</h1>
+       </div>
+     </section>
+       <section>
+         <h2>Customize your pizza on your own</h2>
+       <form action="#">
+         <div>
+           <!--Radio buttons for different types of cheese-->
+           <p>Cheeses</p>
+           <input type="radio" id="Mozzarella" name="cheeses" value="Mozzarella">
+           <label>Mozzarella</label>
+           <input type="radio" id="ReducedFat" name="cheeses" value="ReducedFat">
+           <label>Reduced Fat</label>
+           <input type="radio" id="Feta" name="cheeses" value="Feta">
+           <label>Feta</label>
+         </div>
+         <div>
+            <!--Radio buttons for different types of sauce-->
+           <p>Sauces</p>
+           <input type="radio" id="PizzaSauce" name="sauces" value="PizzaSauce">
+           <label>Pizza Sauce</label>
+           <input type="radio" id="BBQSauce" name="sauces" value="BBQSauce">
+           <label>BBQ Sauce</label>
+           <input type="radio" id="GarlicSauce" name="sauces" value="GarlicSauce">
+           <label>Garlic Sauce</label>
+           <input type="radio" id="Tomatosauce" name="sauces" value="Tomatosauce">
+           <label>Tomato sauce</label>
+         </div>
+         <div>
+            <!--Check box for different types of toppings-->
+           <p>Toppings</p>
+           <input type="checkbox" id="Anchovies" name="toppings1" value="Anchovies">
+           <label>Anchovies</label>
+           <input type="checkbox" id="Ham" name="toppings2" value="Ham">
+           <label>Ham</label>
+           <input type="checkbox" id="Pepperoni" name="toppings3" value="Pepperoni">
+           <label>Pepperoni</label>
+           <input type="checkbox" id="Salami" name="toppings4" value="Salami">
+           <label>Salami</label>
+           <input type="checkbox" id="Sausage" name="toppings5" value="Sausage">
+           <label>Sausage</label>
+           <input type="checkbox" id="mushrooms" name="toppings6" value="Mushrooms">
+           <label>Mushrooms</label>
+        </div>
+        <div>
+           <!--Radio buttons for different types of cold-drinks-->
+          <p>Cold drink</p>
+          <input type="radio" id="pepsi" name="sauces" value="pepsi">
+          <label>pepsi</label>
+          <input type="radio" id="7up" name="sauces" value="7up">
+          <label>7 Up</label>
+          <input type="radio" id="fanta" name="sauces" value="fanta">
+          <label>Fanta</label>
+          <input type="radio" id="cocacola" name="sauces" value="cocacola">
+          <label>Coca Cola</label>
+        </div>
+        <div>
+          <!--Dropdown menu for size of pizza -->
+           <p><label for="size">Choose pizza size:</label></p>
+            <select id="size" name="size">
+            <option value="Small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div>
+          <p><label for="quantity">Number of pizza:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="50"></p>
+        </div>
+         <!--Textboxes for the details-->
+         <p>
+          <label>Your Name:</label>
+          <input type="text">
+        </p>
+        <p>
+        <label>Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </p>
+        <p>
+        <label>Address:</label>
+        <textarea cols="30"></textarea>
+        </p>
+        <div>
+           <p><label for="delivery">Delivery Date:</label>
+          <input type="date" id="delivery" name="delivery"></p>
+        </div>
+        <div>
+          <!--Buttons for order submission or reset-->
+          <p><input type="Submit" value="Place Your Order">
+          <input type="reset" value="Start Over"></p>
+        </div>
+       </form>
+     </section>
+   </main>
+  </body>
+</html>

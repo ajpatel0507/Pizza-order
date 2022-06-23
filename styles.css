@@ -1,0 +1,34 @@
+/**Giving backgroung image and size, color, margin, fontsize, border to body**/
+body{
+  background-image: url("img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#ffb3ff;
+  font-size: 25px;
+  margin: 100px;
+  border: solid 5px #000;
+}
+p, a{
+  color:yellow;
+}
+ /** Giving height to header**/
+header{
+  height: 115px;
+}
+/** Giving height and float**/
+header > div{
+  height: 100%;
+  float:right;
+}
+/**Adjusting images with different dimensions **/
+header > div > img{
+  width: auto;
+  height: 200%;
+}
+/**Giving font-style,color and margin to h1 **/
+main > section:first-child > div > h1{
+  font-family: sans-serif;
+  color:#00cccc;
+  text-align: center;
+  margin-top: -100px;
+}
